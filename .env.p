@@ -1,5 +1,5 @@
 APP_NAME=dr_daisy
-APP_ENV=development
+APP_ENV=local
 APP_KEY=base64:a3cMQu9M6gz+6Ft+27hBHg8zMTPuaVP2OPJSjKnp13Y=
 APP_DEBUG=true
 APP_URL=http://localhost
@@ -7,11 +7,11 @@ APP_URL=http://localhost
 LOG_CHANNEL=stack
 
 DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3308
-DB_DATABASE=dr_daisy
-DB_USERNAME=root
-DB_PASSWORD=
+DB_HOST=db4free.net
+DB_PORT=3306
+DB_DATABASE=drdaisytest
+DB_USERNAME=drdaisytest
+DB_PASSWORD=drdaisytest
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file

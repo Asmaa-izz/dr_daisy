@@ -2,7 +2,7 @@
 
 @section('title','contact_us')
 @section('style')
-    <link rel="stylesheet" href="{{secure_asset('css/contact_us.css')}}" media="screen">
+    <link rel="stylesheet" href="{{asset('css/contact_us.css')}}" media="screen">
 @endsection
 
 @section('section')

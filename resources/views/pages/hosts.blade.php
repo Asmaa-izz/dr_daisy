@@ -2,7 +2,7 @@
 
 @section('title','hosts')
 @section('style')
-    <link rel="stylesheet" href="{{secure_asset('css/hosts.css')}}" media="screen">
+    <link rel="stylesheet" href="{{asset('css/hosts.css')}}" media="screen">
 @endsection
 
 @section('section')
