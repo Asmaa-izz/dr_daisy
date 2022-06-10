@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PetsController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,30 +31,24 @@ Route::get('/contact-us', function () {
     return view('pages.contact-us');
 })->name('contact-us');
 
-Route::get('/sign_in', function () {
-    return view('pages.auth.sign_in');
-})->name('sign_in');
 
-Route::get('/sign_up', function () {
-    return view('pages.auth.sign_up');
-})->name('sign_up');
+// Authentication Routes...
+Route::get('sign_in', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('sign_in');
+Route::post('sign_in', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
+Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
-
-//// Authentication Routes...
-//Route::get('login', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('sign_in');
-//Route::post('login', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
-//Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
-//
-//// Registration Routes...
-//Route::get('register', [App\Http\Controllers\Auth\RegisterController::class, 'showRegistrationForm'])->name('sign_up');
-//Route::post('register', [App\Http\Controllers\Auth\RegisterController::class, 'register'])->name('register');
+// Registration Routes...
+Route::get('sign_up', [App\Http\Controllers\Auth\RegisterController::class, 'showRegistrationForm'])->name('sign_up');
+Route::post('sign_up', [App\Http\Controllers\Auth\RegisterController::class, 'register'])->name('register');
 
 
-Auth::routes();
+Route::group([
+    'middleware' => ['auth:web']
+], function () {
+    Route::get('/profile', [UserController::class, 'index'])->name('profile');
+    Route::resource('pet', PetsController::class, ['name' => 'pet']);
+});
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/profile', [\App\Http\Controllers\UserController::class, 'index'])->name('profile');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
 
 
-Route::resource('pet', \App\Http\Controllers\PetsController::class, ['name' => 'pet']);

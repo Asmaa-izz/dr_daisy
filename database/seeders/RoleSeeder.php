@@ -10,13 +10,13 @@ class RoleSeeder extends Seeder
 {
     public function run()
     {
-        Role::firstOrCreate(['name' => 'admin']);
-        Role::firstOrCreate(['name' => 'client']);
-        Role::firstOrCreate(['name' => 'doctor']);
-        Role::firstOrCreate(['name' => 'host']);
+        Role::firstOrCreate(['name' => 'Admin']);
+        Role::firstOrCreate(['name' => 'Pet owner']);
+        Role::firstOrCreate(['name' => 'Doctor']);
+        Role::firstOrCreate(['name' => 'Host']);
 
 
-        $adminRole = Role::where('name','=','admin')->first();
+        $adminRole = Role::where('name','=','Admin')->first();
         $adminRole->allowTo([
             'crud_breed', 'crud_area'
         ]);

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Role;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -23,6 +24,13 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
+
+    public function showRegistrationForm()
+    {
+        return view('pages.auth.sign_up', [
+            'roles' => Role::where('name', '!=', 'Admin')->get(),
+        ]);
+    }
 
     /**
      * Where to redirect users after registration.
@@ -55,7 +63,7 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8'],
             'phone' => ['required', 'string', 'unique:users'],
             'ssn' => ['required', 'string', 'unique:users'],
-            'bdate'=> ['required', 'string', 'unique:users'],
+            'birth_date'=> ['required', 'string', 'unique:users'],
         ]);
     }
 
@@ -73,10 +81,12 @@ class RegisterController extends Controller
         $user->password =  Hash::make($data['password']);
         $user->phone = $data['phone'];
         $user->ssn = $data['ssn'];
-        $user->bdate = $data['bdate'];
+        $user->birth_date = $data['birth_date'];
+        $user->role_id = $data['role'];
 
         $user->save();
 
         return $user;
+
     }
 }

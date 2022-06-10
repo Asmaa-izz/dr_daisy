@@ -66,6 +66,10 @@
                             <a href="{{ route('profile') }}" class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-2-dark-1 u-text-hover-palette-2-dark-1 u-text-white"
                                  style="padding: 6px 36px;">{{ Auth::user()->name }}</a>
                         </li>
+                        <li class="u-nav-item">
+                            <a href="{{ route('logout') }}" class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-2-dark-1 u-text-hover-palette-2-dark-1 u-text-white"
+                               style="padding: 6px 36px;">Logout</a>
+                        </li>
                     @else
                     <li class="u-nav-item"><a
                             class="u-border-2 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-palette-2-dark-1 u-text-hover-palette-2-dark-1 u-text-white"
@@ -97,6 +101,9 @@
                             @if(Auth::check())
                                 <li class="u-nav-item">
                                     <a class="u-button-style u-nav-link" href="{{ route('profile') }}">{{ Auth::user()->name }}</a>
+                                </li>
+                                <li class="u-nav-item">
+                                    <a class="u-button-style u-nav-link" href="{{ route('logout') }}">Logout</a>
                                 </li>
                             @else
                             <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{ route('sign_in') }}">Sign

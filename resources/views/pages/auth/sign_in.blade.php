@@ -33,7 +33,7 @@
                     </div>
                     <div class="u-form-group u-form-name u-form-group-2">
                         <label for="name-5a7d" class="u-custom-font u-font-merriweather u-label">Password</label>
-                        <input type="text" placeholder="Enter your Password" id="name-5a7d" name="password"
+                        <input type="password" placeholder="Enter your Password" id="name-5a7d" name="password"
                                class="u-border-2 u-border-grey-5 u-custom-font u-font-merriweather u-grey-5 u-input u-input-rectangle u-radius-10 @error('password') is-invalid @enderror"
                                required autocomplete="current-password">
                         @error('password')

@@ -9,9 +9,22 @@
     <section class="u-align-center u-clearfix u-image u-section-1" src="" id="sec-9db8" data-image-width="1600" data-image-height="742">
         <div class="u-clearfix u-sheet u-sheet-1">
             <h1 class="u-text u-text-body-color u-title u-text-1">SIGN UP</h1>
+
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             <div class="u-form u-radius-10 u-white u-form-1">
-                <form method="POST" action="{{ route('register') }}" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" source="email" name="form" style="padding: 28px;">
+                <form method="POST" action="{{ route('register') }}" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
+                      style="padding: 28px;">
                     @csrf
+
                     <div class="u-form-email u-form-group">
                         <label for="email-4c18" class="u-custom-font u-font-merriweather u-label">Email</label>
                         <input type="email" placeholder="Enter a valid email address" id="email-4c18" name="email" value="{{ old('email') }}"
@@ -83,10 +96,10 @@
                     </div>
                     <div class="u-form-date u-form-group u-form-group-7">
                         <label for="date-0d23" class="u-custom-font u-font-merriweather u-label">Birth Date</label>
-                        <input type="date" placeholder="MM/DD/YYYY" id="date-0d23" name="bdate" value="{{ old('bdate') }}"
-                               class="u-border-2 u-border-grey-5 u-custom-font u-font-merriweather u-grey-5 u-input u-input-rectangle u-radius-10 @error('bdate') is-invalid @enderror"
-                               required autocomplete="bdate">
-                        @error('bdate')
+                        <input type="date" placeholder="MM/DD/YYYY" id="date-0d23" name="birth_date" value="{{ old('birth_date') }}"
+                               class="u-border-2 u-border-grey-5 u-custom-font u-font-merriweather u-grey-5 u-input u-input-rectangle u-radius-10 @error('birth_date') is-invalid @enderror"
+                               required autocomplete="birth_date">
+                        @error('birth_date')
                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -95,12 +108,12 @@
                     <div class="u-form-group u-form-select u-form-group-8">
                         <label for="select-1842" class="u-custom-font u-font-merriweather u-label">Select</label>
                         <div class="u-form-select-wrapper">
-                            <select id="select-1842" name="select"
+                            <select id="select-1842" name="role"
                                     class="u-border-2 u-border-grey-5 u-custom-font u-font-merriweather u-grey-5 u-input u-input-rectangle u-radius-10 @error('select') is-invalid @enderror"
                                     required="required">
-                                <option value="Pet owner">Pet owner</option>
-                                <option value="Doctor">Doctor</option>
-                                <option value="Host">Host</option>
+                                @foreach($roles as $role)
+                                    <option value="{{ $role->id }}">{{ $role->name }}</option>
+                                @endforeach
                             </select>
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
                         </div>
@@ -111,9 +124,12 @@
                         </label>
                     </div>
                     <div class="u-align-right u-form-group u-form-submit">
-                        <a href="#" class="u-active-palette-1-light-1 u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-border-palette-1-light-2 u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-font-merriweather u-hover-palette-1-light-1 u-palette-1-light-2 u-radius-10 u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Continue<br>
-                        </a>
-                        <input type="submit" value="submit" class="u-form-control-hidden">
+{{--                        <a href="#" class="u-active-palette-1-light-1 u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-border-palette-1-light-2 u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-font-merriweather u-hover-palette-1-light-1 u-palette-1-light-2 u-radius-10 u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Continue<br>--}}
+{{--                        </a>--}}
+{{--                        <input type="submit" value="submit" class="u-form-control-hidden">--}}
+
+                        <button type="submit" class="u-active-palette-1-light-1 u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-border-palette-1-light-2 u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-font-merriweather u-hover-palette-1-light-1 u-palette-1-light-2 u-radius-10 u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Continue<br>
+                        </button>
                     </div>
 {{--                    <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>--}}
 {{--                    <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>--}}
