@@ -2,8 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de9ce64a-bfc1-4011-809a-323679356e71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/Blog-Template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/Post-Template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/confirm_booking.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/contact_us.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/doctor_applying.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/doctors.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/host_applying.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/hosts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/nicepage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/pet_details.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/sign_in.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/sign_up.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/-min.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/6462524.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/839ca099-1e2b-1220-d705-f157a9c6f43b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/daisy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/fggf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/gfgf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/group-portrait-adorable-puppies.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/group-portrait-adorable-puppies1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pexelsphoto3294248.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/pexelsphoto3377909.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/nicepage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/head.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/auth/sign_in.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/auth/sign_up.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/contact-us.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/doctors.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/hosts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,8 +183,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\php_projects\dr_daisy\public\images" />
+      <recent name="C:\php_projects\dr_daisy\public\js" />
+      <recent name="C:\php_projects\dr_daisy\public\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\php_projects\dr_daisy\resources\views\pages" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -157,7 +214,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654804666377</updated>
-      <workItem from="1654804672201" duration="973000" />
+      <workItem from="1654804672201" duration="4489000" />
     </task>
     <servers />
   </component>

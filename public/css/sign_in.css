@@ -1,0 +1,163 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 861px;
+}
+
+.u-section-1 .u-rotation-parent-1 {
+  width: 745px;
+  height: 822px;
+  margin: 10px 0 0 auto;
+}
+
+.u-section-1 .u-shape-1 {
+  width: 822px;
+  height: 745px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 622px;
+  height: 623px;
+  object-position: 0% 50%;
+  background-position: 50% 50%;
+  background-image: url("../images/group-portrait-adorable-puppies.jpg");
+  margin: -734px 107px 0 auto;
+}
+
+.u-section-1 .u-form-1 {
+  height: 301px;
+  background-image: none;
+  margin: -301px 529px 60px 35px;
+}
+
+.u-section-1 .u-form-group-2 {
+  margin-left: 0;
+}
+
+.u-section-1 .u-btn-1 {
+  border-style: solid;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  font-weight: 700;
+  background-image: none;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-rotation-parent-1 {
+    width: 878px;
+    height: 922px;
+    margin-right: 48px;
+  }
+
+  .u-section-1 .u-shape-1 {
+    width: 922px;
+    height: 878px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 724px;
+    height: 724px;
+    margin-right: -52px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-top: -311px;
+    margin-right: 448px;
+    margin-left: 100px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    padding: 9px 23px 9px 21px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 808px;
+  }
+
+  .u-section-1 .u-rotation-parent-1 {
+    width: 720px;
+    height: 769px;
+    margin-right: auto;
+    margin-left: 210px;
+  }
+
+  .u-section-1 .u-shape-1 {
+    width: 794px;
+    height: 720px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 594px;
+    height: 594px;
+    margin-top: -681px;
+    margin-right: 250px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: 338px;
+    margin-left: 210px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 628px;
+  }
+
+  .u-section-1 .u-rotation-parent-1 {
+    width: 540px;
+    height: 589px;
+    margin-left: 300px;
+  }
+
+  .u-section-1 .u-shape-1 {
+    width: 596px;
+    height: 540px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 440px;
+    height: 440px;
+    margin-top: -501px;
+    margin-right: 334px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 553px;
+    margin-top: -301px;
+    margin-right: 293px;
+    margin-left: 294px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 428px;
+  }
+
+  .u-section-1 .u-rotation-parent-1 {
+    width: 340px;
+    height: 389px;
+    margin-left: 400px;
+  }
+
+  .u-section-1 .u-shape-1 {
+    width: 375px;
+    height: 340px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 293px;
+    height: 293px;
+    margin-top: -301px;
+    margin-right: 0;
+    margin-left: 400px;
+  }
+
+  .u-section-1 .u-form-1 {
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+}
