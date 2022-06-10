@@ -2,7 +2,7 @@
 
 @section('title','sign_in')
 @section('style')
-    <link rel="stylesheet" href="{{URL::asset('css/sign_in.css')}}" media="screen">
+    <link rel="stylesheet" href="{{secure_asset('css/sign_in.css')}}" media="screen">
 @endsection
 
 @section('section')

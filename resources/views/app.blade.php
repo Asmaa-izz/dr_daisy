@@ -9,7 +9,7 @@
     <div class="u-clearfix u-sheet u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="512" data-image-height="512"
            data-animation-name="customAnimationIn" data-animation-duration="4000" data-animation-direction="">
-            <img src="{{ URL::asset('images/daisy.png') }}" class="u-logo-image u-logo-image-1">
+            <img src="{{ secure_asset('images/daisy.png') }}" class="u-logo-image u-logo-image-1">
         </a>
         <nav class="u-align-left u-menu u-menu-dropdown u-nav-spacing-25 u-offcanvas u-menu-1">
             <div class="menu-collapse"
