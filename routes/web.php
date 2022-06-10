@@ -36,3 +36,20 @@ Route::get('/sign_in', function () {
 Route::get('/sign_up', function () {
     return view('pages.auth.sign_up');
 })->name('sign_up');
+
+
+//// Authentication Routes...
+//Route::get('login', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('sign_in');
+//Route::post('login', [App\Http\Controllers\Auth\LoginController::class, 'login'])->name('login');
+//Route::get('logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+//
+//// Registration Routes...
+//Route::get('register', [App\Http\Controllers\Auth\RegisterController::class, 'showRegistrationForm'])->name('sign_up');
+//Route::post('register', [App\Http\Controllers\Auth\RegisterController::class, 'register'])->name('register');
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/profile', [\App\Http\Controllers\UserController::class, 'index'])->name('profile');

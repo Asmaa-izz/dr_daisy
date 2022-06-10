@@ -2,51 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de9ce64a-bfc1-4011-809a-323679356e71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/Blog-Template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/Post-Template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/confirm_booking.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/contact_us.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/doctor_applying.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/doctors.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/host_applying.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/hosts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/nicepage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/pet_details.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/sign_in.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/sign_up.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/-min.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/6462524.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/839ca099-1e2b-1220-d705-f157a9c6f43b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/daisy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/f.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/fggf.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/gfgf.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/group-portrait-adorable-puppies.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/group-portrait-adorable-puppies1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pexelsphoto3294248.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pexelsphoto3377909.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/nicepage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/head.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/auth/sign_in.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/auth/sign_up.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/contact-us.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/doctors.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/hosts.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dr_daisy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dr_daisy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/auth/sign_in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/auth/sign_in.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/auth/sign_up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/auth/sign_up.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/contact-us.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/contact-us.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/doctors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/doctors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/hosts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/hosts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +39,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -172,6 +160,7 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="2AM1UB7ITAW3lc6JnQDGl1whf0O" />
@@ -214,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654804666377</updated>
-      <workItem from="1654804672201" duration="4489000" />
+      <workItem from="1654804672201" duration="10730000" />
     </task>
     <servers />
   </component>
