@@ -7,11 +7,11 @@
 
     <title>@yield('title')</title>
 
-    <link rel="stylesheet" href="{{ secure_asset('css/nicepage.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ URL::asset('css/nicepage.css') }}" media="screen">
     @yield('style')
 
-    <script class="u-script" type="text/javascript" src="{{ secure_asset('js/jquery.js') }}" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{{ secure_asset('js/nicepage.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ URL::asset('js/jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ URL::asset('js/nicepage.js') }}" defer=""></script>
 
     <meta name="generator" content="Nicepage 4.8.2, nicepage.com">
 

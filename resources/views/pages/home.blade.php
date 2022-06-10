@@ -2,7 +2,7 @@
 
 @section('title','home')
 @section('style')
-    <link rel="stylesheet" href="{{secure_asset('css/home.css')}}" media="screen">
+    <link rel="stylesheet" href="{{URL::asset('css/home.css')}}" media="screen">
 @endsection
 
 @section('section')
