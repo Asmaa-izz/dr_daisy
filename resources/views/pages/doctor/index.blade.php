@@ -60,30 +60,21 @@
             </div>
             <div class="u-list u-list-1">
                 <div class="u-repeater u-repeater-1">
-                    <div class="u-align-center u-container-style u-list-item u-palette-3-light-2 u-radius-10 u-repeater-item u-shape-round u-list-item-1">
-                        <div class="u-container-layout u-similar-container u-container-layout-1">
-                            <h4 class="u-align-left u-custom-font u-custom-item u-font-merriweather u-text u-text-1">Connor Quinn<br>
-                            </h4>
-                            <h3 class="u-align-left u-custom-font u-font-lato u-text u-text-2">450 EGP</h3>
-                            <h6 class="u-align-left u-custom-font u-custom-item u-font-merriweather u-text u-text-3">-&nbsp; &nbsp;Therapist</h6>
-                            <div alt="" class="u-image u-image-circle u-image-1" data-image-width="1080" data-image-height="1080"></div>
-                            <p class="u-align-left u-custom-font u-custom-item u-font-merriweather u-large-text u-text u-text-variant u-text-4">"​Sample text for HOSTS to write ​But, while sending messages to your customers can help improve engagement and resolve queries faster, having to manually send individual messages can be extremely time-consuming.&nbsp;</p>
-                            <a href="https://nicepage.app" class="u-active-palette-1-light-1 u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-border-palette-1-light-2 u-btn u-btn-round u-button-style u-custom-font u-custom-item u-font-merriweather u-hover-palette-1-light-1 u-palette-1-light-2 u-radius-10 u-btn-2" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">View Profile</a>
-                            <a href="https://nicepage.app" class="u-active-palette-1-light-1 u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-border-palette-1-light-2 u-btn u-btn-round u-button-style u-custom-font u-custom-item u-font-merriweather u-hover-palette-1-light-1 u-palette-1-light-2 u-radius-10 u-btn-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Book now</a>
-                        </div>
-                    </div>
-                    <div class="u-align-center u-container-style u-list-item u-palette-3-light-2 u-radius-10 u-repeater-item u-shape-round u-list-item-2">
+
+                    @foreach($doctors as $doctor)
+                    <div style="min-height: 300px;" class="u-align-center u-container-style u-list-item u-palette-3-light-2 u-radius-10 u-repeater-item u-shape-round u-list-item-2">
                         <div class="u-container-layout u-similar-container u-container-layout-2">
-                            <h4 class="u-align-left u-custom-font u-custom-item u-font-merriweather u-text u-text-5">Connor Quinn<br>
+                            <h4 class="u-align-left u-custom-font u-custom-item u-font-merriweather u-text u-text-5">{{ $doctor->user->name }}<br>
                             </h4>
-                            <h3 class="u-align-left u-custom-font u-font-lato u-text u-text-6">350 EGP</h3>
-                            <h6 class="u-align-left u-custom-font u-custom-item u-font-merriweather u-text u-text-7"> -&nbsp; &nbsp;Therapist</h6>
+                            <h3 class="u-align-left u-custom-font u-font-lato u-text u-text-6">{{ $doctor->consultation_fee }} EGP</h3>
+                            <h6 class="u-align-left u-custom-font u-custom-item u-font-merriweather u-text u-text-7"> -&nbsp; &nbsp;{{ $doctor->speciality }}</h6>
                             <div alt="" class="u-image u-image-circle u-image-2" data-image-width="900" data-image-height="933"></div>
-                            <p class="u-align-left u-custom-font u-custom-item u-font-merriweather u-large-text u-text u-text-variant u-text-8">"​Sample text for HOSTS to write ​But, while sending messages to your customers can help improve engagement and resolve queries faster, having to manually send individual messages can be extremely time-consuming.&nbsp;</p>
-                            <a href="https://nicepage.app" class="u-active-palette-1-light-1 u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-border-palette-1-light-2 u-btn u-btn-round u-button-style u-custom-font u-custom-item u-font-merriweather u-hover-palette-1-light-1 u-palette-1-light-2 u-radius-10 u-btn-4" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">View Profile</a>
+                            <p class="u-align-left u-custom-font u-custom-item u-font-merriweather u-large-text u-text u-text-variant u-text-8">{{ $doctor->insurances }}</p>
+                            <a href="{{ route('profile.user', $doctor->user->id) }}" class="u-active-palette-1-light-1 u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-border-palette-1-light-2 u-btn u-btn-round u-button-style u-custom-font u-custom-item u-font-merriweather u-hover-palette-1-light-1 u-palette-1-light-2 u-radius-10 u-btn-4" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">View Profile</a>
                             <a href="https://nicepage.app" class="u-active-palette-1-light-1 u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-border-palette-1-light-2 u-btn u-btn-round u-button-style u-custom-font u-custom-item u-font-merriweather u-hover-palette-1-light-1 u-palette-1-light-2 u-radius-10 u-btn-5" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Book now</a>
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>

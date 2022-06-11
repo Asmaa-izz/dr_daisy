@@ -9,6 +9,16 @@
 
     <link rel="stylesheet" href="{{ asset('css/nicepage.css') }}" media="screen">
     @yield('style')
+    <style>
+        .invalid-feedback {
+            color: red;
+            font-size: small;
+        }
+
+        .is-invalid {
+            border-color: red;
+        }
+    </style>
 
     <script class="u-script" type="text/javascript" src="{{ asset('js/jquery.js') }}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{{ asset('js/nicepage.js') }}" defer=""></script>

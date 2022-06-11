@@ -82,6 +82,7 @@ class RegisterController extends Controller
         $user->phone = $data['phone'];
         $user->ssn = $data['ssn'];
         $user->birth_date = $data['birth_date'];
+        $user->address = $data['address'];
         $user->role_id = $data['role'];
 
         $user->save();

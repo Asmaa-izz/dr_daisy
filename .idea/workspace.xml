@@ -2,19 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de9ce64a-bfc1-4011-809a-323679356e71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DoctorsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HostsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/ComplateLoginMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Doctor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Host.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2022_06_10_203608_create_doctors_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2022_06_10_203739_create_hosts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/DoctorSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/HostSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/book.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/doctor/applying.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/host/applying.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/host/book.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/profile/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/test.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea-personal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea-personal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/RoleSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RoleSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PetsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PetsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/sign_in.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/sign_in.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/head.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/auth/sign_in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/auth/sign_in.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/auth/sign_up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/auth/sign_up.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/doctors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/doctor/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/hosts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/host/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/pet/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/pet/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/pet/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/pet/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +44,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -37,7 +59,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
@@ -161,23 +183,29 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/pages/pet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeders" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\php_projects\dr_daisy\database\seeders" />
       <recent name="C:\php_projects\dr_daisy\resources\views\pages\pet" />
       <recent name="C:\php_projects\dr_daisy" />
       <recent name="C:\php_projects\dr_daisy\public\images" />
       <recent name="C:\php_projects\dr_daisy\public\js" />
-      <recent name="C:\php_projects\dr_daisy\public\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\php_projects\dr_daisy\resources\views\pages" />
+      <recent name="C:\php_projects\dr_daisy\resources\views\pages\host" />
+      <recent name="C:\php_projects\dr_daisy\resources\views\pages\doctor" />
     </key>
   </component>
   <component name="RunManager">
@@ -194,7 +222,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1654804666377</updated>
-      <workItem from="1654804672201" duration="21638000" />
+      <workItem from="1654804672201" duration="35263000" />
+      <workItem from="1654956218806" duration="6103000" />
     </task>
     <servers />
   </component>
@@ -211,5 +240,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

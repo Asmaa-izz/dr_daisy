@@ -18,7 +18,7 @@
             </div>
             <div class="u-align-left u-image u-image-circle u-image-1" data-image-width="4967" data-image-height="2490"></div>
             <div class="u-expanded-width-xs u-form u-radius-10 u-white u-form-1">
-                <form method="POST" action="{{ route('login') }}" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" source="email" name="form" style="padding: 28px;">
+                <form method="POST" action="{{ route('login') }}" style="padding: 28px;">
                     @csrf
                     <div class="u-form-email u-form-group">
                         <label for="email-4c18" class="u-custom-font u-font-merriweather u-label">Email</label>
@@ -42,15 +42,16 @@
                                     </span>
                         @enderror
                     </div>
+
                     <div class="u-align-right u-form-group u-form-submit">
-                        <a href="#" class="u-active-palette-1-light-1 u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-border-palette-1-light-2 u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-font-merriweather u-hover-palette-1-light-1 u-palette-1-light-2 u-radius-10 u-btn-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">Enter</a>
-                        <input type="submit" value="submit" class="u-form-control-hidden">
+                    <input type="submit" class="u-active-palette-1-light-1 u-border-2 u-border-active-palette-1-light-1 u-border-hover-palette-1-light-1 u-border-palette-1-light-2 u-btn u-btn-round u-btn-submit u-button-style u-custom-font u-font-merriweather u-hover-palette-1-light-1 u-palette-1-light-2 u-radius-10 u-btn-1" value="enter">
                     </div>
-                    <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-                    <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-                    <input type="hidden" value="" name="recaptchaResponse">
                 </form>
             </div>
         </div>
     </section>
+
+
+    <script>
+    </script>
 @endsection
